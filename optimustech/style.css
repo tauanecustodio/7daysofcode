@@ -9,6 +9,7 @@
     --gray-500:  rgba(102, 112, 133, 1);
     --gray-900: rgba(16, 24, 40, 1);
     --base-red: rgba(142, 36, 36, 1);
+    --base-red-50: rgba(142, 36, 36, 0.05)
 }
 
 * {
@@ -23,6 +24,10 @@ body {
     font-style: normal;
     font-weight: 500;
     background: var(--base-white);
+    scroll-behavior: smooth;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 #nav-bar {
@@ -43,6 +48,8 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center; 
+    flex-wrap: wrap;
+
 }
 
 #logo {
@@ -68,6 +75,7 @@ body {
 #pages {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 32px;
 }
 
@@ -79,12 +87,17 @@ body {
     text-decoration: none;
     font-size: 16px;
     color: var(--gray-500);
+    text-wrap: nowrap;
+}
+
+#pages li a:hover {
+    color: var(--base-red);
+    font-size: 18px;
 }
 
 #container div:empty {
     width: 142px;
     height: 32px;
-    flex-shrink: 0;
 }
 
 #button-register {
@@ -103,6 +116,13 @@ body {
     background: var(--base-white);
 }
 
+#entrar:hover, #cadastro:hover {
+    background: var(--base-red-50);
+    border-radius: 8px;
+    color: var(--gray-500);
+    border: 1px solid var(--base-red)
+}
+
 #cadastro {
     background: var(--base-red);
     color: var(--base-white);
@@ -110,6 +130,7 @@ body {
 }
 
 header {
+    width: 100%;
     display: flex;
     padding: 176px 0px 96px 0px;
     flex-direction: column;
@@ -123,12 +144,12 @@ header {
 }
 
 #about h2 {
-    width: 603px;
     font-size: 48px;
     font-weight: 600;
     line-height: 60px;
     letter-spacing: -0.96px;
-    color: var(--gray-900)
+    color: var(--gray-900);
+    text-align: center;
 }
 
 #about p {
@@ -137,6 +158,7 @@ header {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
+    text-align: center;
 }
 
 main {
@@ -147,9 +169,10 @@ main {
 
 #metricas {
     display: flex;
-    width: 1280px;
-    padding: 0px 32px 96px 32px;
+    padding: 0 0 96px 0;
     align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 32px;
 }
 
@@ -192,8 +215,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 32px;
-    padding: 0 244px;
 }
 
 #talentos h2 {
@@ -201,9 +222,10 @@ main {
     line-height: 20px;
     color: var(--base-red);
     border-radius: 16px;
-    background: rgba(142, 36, 36, 0.05);
+    background: var(--base-red-50);
     padding: 4px 12px;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 #talentos h3 {
@@ -213,6 +235,7 @@ main {
     line-height: 44px;
     letter-spacing: -0.72px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 #talentos p {
@@ -220,12 +243,14 @@ main {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
+    text-align: center;
 }
 
 #img-vagas {
-    width: 1216px;
-    height: 400px;
-    flex-shrink: 0;
+    max-width: 1216px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
 }
 
 #vagas-abertas {
@@ -262,6 +287,10 @@ main {
     width: 720px;
 }
 
+.vaga:hover {
+    background: var(--gray-50);
+}
+
 .vaga h5 {
     color: var(--gray-900);
     font-size: 18px;
@@ -282,9 +311,10 @@ main {
     background: rgba(195, 25, 25, 0.03);
     display: flex;
     padding: 64px;
-    margin: 0 32px 96px 32px;
+    margin: 0 0 96px 0;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 32px;
 }
 
@@ -299,6 +329,7 @@ main {
     font-size: 14px;
     font-weight: 600;
     color: var(--base-red);
+    text-align: center;
 }
 
 #quote p {
@@ -331,9 +362,9 @@ main {
 footer {
     background: var(--gray-50);
     display: flex;
-    padding: 96px 0px;
     flex-direction: column;
     align-items: center;
+    padding: 96px 0px;
     gap: 32px;
 }
 
@@ -366,12 +397,14 @@ footer {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
+    text-align: center;
 }
 
 #form {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 16px;
 }
 
@@ -397,4 +430,71 @@ footer {
 footer p {
     font-weight: 400;
     color: var(--gray-400);
+}
+
+@media (max-width: 1200px) {
+    main {
+        padding: 0 90px;
+    }
+    #about p {
+        margin: 10px 0;
+    }
+    #container div:empty {
+        width: 0;
+        height: 0;
+    }
+    #about p {
+        width: 700px;
+    }
+    #quote p {
+        font-size: 30px;
+    }
+    .vaga {
+        width: 600px;
+    }
+}
+
+@media (max-width: 900px) {
+    main {
+        padding: 0 50px;
+    }
+    #pages {
+        order: 2;
+        margin-top: 15px;
+    }
+    #container div:empty {
+        width: 200px;
+        height: 0;
+    }
+    #about p {
+        width: 550px;
+    }
+    #quote p {
+        font-size: 25px;
+    }
+    #depimentos {
+        padding: 45px;
+    }
+    .vaga {
+        width: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 0 25px;
+    }
+    #container div:empty {
+        width: 0;
+        height: 0;
+    }
+    #about p {
+        width: 400px;
+    }
+    #depimentos {
+        padding: 30px;
+    }
+    .vaga {
+        width: 300px;
+    }
 }
