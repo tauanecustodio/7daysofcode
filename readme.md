@@ -1,5 +1,5 @@
 # 7 days of code - Alura
-![](.\img\7daysofcodelogo.svg)
+![logo](./img/7daysofcodelogo.svg)
 
 ## Desafios
 1. **Optimustech**  
