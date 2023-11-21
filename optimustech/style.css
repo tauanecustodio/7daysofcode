@@ -138,12 +138,12 @@ header {
     gap: 24px;
 }
 
-#about h1 {
+#about span {
     color: var(--base-red);
     font-weight: 600;
 }
 
-#about h2 {
+#about h1 {
     font-size: 48px;
     font-weight: 600;
     line-height: 60px;
@@ -217,7 +217,7 @@ main {
     align-items: center;
 }
 
-#talentos h2 {
+#talentos span {
     font-size: 14px;
     line-height: 20px;
     color: var(--base-red);
@@ -228,7 +228,7 @@ main {
     text-align: center;
 }
 
-#talentos h3 {
+#talentos h2 {
     color: var(--gray-900);
     font-size: 36px;
     font-weight: 600;
@@ -247,10 +247,8 @@ main {
 }
 
 #img-vagas {
-    max-width: 1216px;
-    max-height: 400px;
-    width: auto;
-    height: auto;
+    width: 1216px;
+    height: 400px;
 }
 
 #vagas-abertas {
@@ -446,6 +444,10 @@ footer p {
     #about p {
         width: 700px;
     }
+    #img-vagas {
+        width: 1054px;
+        height: 350px;
+    }
     #quote p {
         font-size: 30px;
     }
@@ -469,6 +471,10 @@ footer p {
     #about p {
         width: 550px;
     }
+    #img-vagas {
+        width: 912px;
+        height: 300px;
+    }
     #quote p {
         font-size: 25px;
     }
@@ -490,6 +496,10 @@ footer p {
     }
     #about p {
         width: 400px;
+    }
+    #img-vagas {
+        width: 608px;
+        height: 200px;
     }
     #depimentos {
         padding: 30px;
