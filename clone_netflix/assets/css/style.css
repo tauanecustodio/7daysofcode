@@ -1,0 +1,36 @@
+:root {
+    --white: #FFF;
+    --white-30-opacity: rgba(255, 255, 255, 0.30);
+    --smokeWhite: #E5E5E5;
+    --midGray: rgba(109, 109, 110, 0.70);
+    --gray: #808080;
+    --black: #141414;
+    --red: #B9090B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background-color: var(--black);
+    font-family: sans-serif;
+}
+
+/* Componentes */
+
+
+
+/* header */
+
+
+
+/* main */
+
+
+
+/* footer */
+
