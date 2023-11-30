@@ -12,9 +12,9 @@
 <body>
 
     <header>
-        <div>
+        <div id="header-left">
             <img id="logo" src="assets/img/logo.png" alt="logo da Netflix">
-            <nav>
+            <nav id="nav-bar">
                 <a>Início</a>
                 <a>Séries</l>
                 <a>Filmes</a>
@@ -23,9 +23,10 @@
             </nav>
         </div>
 
-        <div>
+        <div id="header-right">
             <img src="assets/icones/Search.png" alt="">
             <img src="assets/icones/notification.png" alt="">
+            <img src="assets/icones/GiftBox.png" alt="">
             <img src="assets/img/user.png" alt="">
             <img src="assets/icones/Down.png" alt="">
         </div>
@@ -33,17 +34,21 @@
 
     <main>
         <section id="banner">
-            <img src="assets/img/titlebanner.png" alt="">
-            <p>Em uma penitenciária de última geração, um detento participa de um experimento com drogas que controlam emoções para um gênio da indústria farmacêutica.</p>
+            <div id="banner-content">
+                <img id="banner-title" src="assets/img/titlebanner.png" alt="">
+                <p>Em uma penitenciária de última geração, um detento participa de um experimento com drogas que controlam emoções para um gênio da indústria farmacêutica.</p>
 
-            <a href="#"><img src="assets/icones/Play.png" alt="">Assitir</a>
-            <a href="#"><img src="assets/icones/vector_information.png" alt="">Mais informações</a>
+                <div id="buttons-banner">
+                    <a href="#" class="button"><img src="assets/icones/Play.png" alt="">Assitir</a>
+                    <a href="#" class="button"><img src="assets/icones/vector_information.png" alt="">Mais informações</a>
+                </div>
+            </div>
         </section>
 
-        <section id="listas">
-            <div>
+        <section id="lists">
+            <div class="block-list">
                 <h2>Minha lista</h2>
-                <div class="lista">
+                <div class="list">
                     <img src="assets/img/minha_lista/poster_01.png" alt="">
                     <img src="assets/img/minha_lista/poster_02.png" alt="">
                     <img src="assets/img/minha_lista/poster_03.png" alt="">
@@ -53,9 +58,9 @@
                     <img src="assets/img/minha_lista/poster_07.png" alt="">
                 </div>
             </div>
-            <div>
+            <div class="block-list">
                 <h2>Em alta</h2>
-                <div class="lista">
+                <div class="list">
                     <img src="assets/img/em_alta/poster_01.png" alt="">
                     <img src="assets/img/em_alta/poster_02.png" alt="">
                     <img src="assets/img/em_alta/poster_03.png" alt="">
@@ -65,9 +70,9 @@
                     <img src="assets/img/em_alta/poster_07.png" alt="">
                 </div>
             </div>
-            <div>
+            <div class="block-list">
                 <h2>Séries estrangeiras</h2>
-                <div class="lista">
+                <div class="list">
                     <img src="assets/img/series_estrangeiras/poster_01.png" alt="">
                     <img src="assets/img/series_estrangeiras/poster_02.png" alt="">
                     <img src="assets/img/series_estrangeiras/poster_03.png" alt="">
@@ -78,9 +83,9 @@
                     <img src="assets/img/series_estrangeiras/poster_08.png" alt="">
                 </div>
             </div>
-            <div>
+            <div class="block-list">
                 <h2>Séries excêntricas de humor ácido</h2>
-                <div class="lista">
+                <div class="list">
                     <img src="assets/img/series_excentrica/poster_01.png" alt="">
                     <img src="assets/img/series_excentrica/poster_02.png" alt="">
                     <img src="assets/img/series_excentrica/poster_03.png" alt="">
