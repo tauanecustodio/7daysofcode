@@ -17,7 +17,7 @@
 
 body {
     background-color: var(--color-black);
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--color-white);
     width: 100vw;
 }
@@ -71,11 +71,17 @@ header {
 
 #nav-bar a {
     color: var(--color-smokeWhite);
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#nav-bar a:hover {
+    color: var(--color-white);
+    cursor: pointer;
 }
 
 /* main */
+
 #banner {
     width: 100%;
     height: 810px;
@@ -101,9 +107,6 @@ header {
 #banner-title {
     width: 408px;
     height: 115px; 
-}
-
-#banner-title {
     font-size: 26px;
     font-weight: 400;
 }
@@ -118,17 +121,30 @@ header {
 #buttons-banner a {
     display: flex;
     padding: 15px 30px;
+    border-radius: 2px;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    border-radius: 1px;
-    background: #FFF;
-    color: var(--color-black)
+    background: var(--color-white);
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+#buttons-banner a:hover {
+    background: var(--color-smokeWhite)
 }
 
 #buttons-banner a:nth-of-type(2) {
     background: var(--color-white-30-opacity);
     color: var(--color-white);
+}
+
+#buttons-banner a:nth-of-type(2):hover {
+    background: var(--color-midGray);
+}
+
+.button img {
+    height: 25px;
 }
 
 #lists {
@@ -145,16 +161,24 @@ header {
 .block-list h2 {
     font-size: 20px;
     font-weight: 600;
-    padding: 10px 60px;
+    padding: 0 60px;
 }
 
 .list {
-    padding: 0 60px;
+    padding: 15px 60px;
     display: flex;
     overflow-x: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
     gap: 5px;
+    transition: 250ms all;
+
+}
+
+.list img:hover {
+    margin: 0 20px;
+    transform: scale(1.1);
+    z-index: 10;
 }
 
 ::-webkit-scrollbar {
@@ -215,20 +239,25 @@ footer {
 }
 
 .links-footer a {
-    color: var(--color-gray)
-}
-
-#footer-link {
-    border: 1px solid var(--color-gray);
-    padding: 10px 15px;
-}
-
-#footer-link a {
     color: var(--color-gray);
 }
 
+.links-footer a:hover {
+    text-decoration: underline;
+}
+
+#footer-link {
+    color: var(--color-gray);
+    padding: 10px 15px;
+    border: 1px solid var(--color-gray);
+}
+
+#footer-link:hover {
+    color: var(--color-white);
+    border-color: var(--color-smokeWhite)
+}
+
 footer span {
-    font-size: 11px;
-    font-style: normal;
+    font-size: 14px;
     font-weight: 300;
 }
