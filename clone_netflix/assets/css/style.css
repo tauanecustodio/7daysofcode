@@ -41,6 +41,7 @@ header {
     right: 0;
     top: 0;
     left: 0;
+    z-index: 10;
 }
 
 #header-left {
@@ -178,7 +179,7 @@ header {
 .list img:hover {
     margin: 0 20px;
     transform: scale(1.1);
-    z-index: 10;
+    z-index: 5;
 }
 
 ::-webkit-scrollbar {
@@ -228,7 +229,7 @@ footer {
 #section-links-footer {
     display: flex;
     align-items: flex-start;
-    gap: 150px;
+    gap: 15rem;
 }
 
 .links-footer {
